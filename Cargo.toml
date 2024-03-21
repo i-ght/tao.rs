@@ -7,7 +7,3 @@ edition = "2021"
 
 [dependencies]
 regex = "1.10.3"
-
-[lib]
-name = "tao"
-path = "src/tao.rs"
