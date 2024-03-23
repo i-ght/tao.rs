@@ -1,10 +1,11 @@
-use tao::slice;
-
-mod gfje_engtext;
+use tao;
+use rand::Rng;
 
 fn main() {
     let code = 
-        slice(gfje_engtext::GIA_FU_FEN_AND_JANE_ENGLISH_TRANSLATION);
-    
-    println!("{:#?}", &code[13])
-}
+        tao::slice(tao::gfje_engtext::GIA_FU_FEN_AND_JANE_ENGLISH_TRANSLATION);
+
+    let z = rand::thread_rng().gen_range(0..=code.len());
+    let tao = &code[z];
+    println!("{:#?}", ((z+1), tao));
+}       

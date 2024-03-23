@@ -1,6 +1,8 @@
 use std::collections::HashSet;
 use regex::RegexBuilder;
 
+pub mod gfje_engtext;
+
 pub fn slice(tao: &str) -> Vec<Vec<String>> {
     let mut re_ctor =
         RegexBuilder::new(
